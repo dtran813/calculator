@@ -69,7 +69,7 @@ class Calculator {
         computation = prev * curr;
         break;
       case '÷':
-        computation = prev / curr;
+        computation = curr != 0 ? prev / curr : 'Cannot divide by zero';
         break;
       default:
         return;
