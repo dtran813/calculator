@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +9,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -22,15 +23,15 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
-  /* gap: 5px; */
   border-radius: 9px;
   overflow: hidden;
 }
 
 .display {
   grid-column: 1 / -1;
+  font-family: 'Nunito', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -39,8 +40,9 @@ main {
   padding: 2rem;
   margin: 1rem;
   border-radius: 5px;
-  box-shadow: 0px 0px 8px 3px #b8b9be, -3px -3px 6px #fff;
+  box-shadow: 0 0 8px 3px #b8b9be, -3px -3px 6px #fff;
   word-break: break-all;
+  overflow: hidden;
 }
 
 .display .pre-calculation {
@@ -52,21 +54,39 @@ main {
   font-size: 4rem;
 }
 
-.btn {
-  font: 500 2.5rem 'Montserrat', sans-serif;
-  font-family: inherit;
-  height: 6rem;
-  margin: 3px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0px 0px 5px #b4b6bd, -3px -3px 6px #fff;
+.top-line {
+  border-top: 1px solid black;
 }
 
-.btn:hover {
-  box-shadow: inset 3px 3px 7px #b4b6bd, inset -5px -5px 5px #fff;
+.btn {
+  font: 500 2.5rem 'Roboto', sans-serif;
+  height: 6rem;
+  margin: 3px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #b4b6bd, -2px -2px 5px #fff;
 }
 
 .number {
-  color: #bc8cf2;
+  color: #393e46;
+}
+
+.operation {
+  background-color: #08d9d6;
+}
+
+.equal {
+  background-color: #fce38a;
+}
+
+.special-operation,
+.clear-all,
+.clear-entry,
+.delete {
+  background-color: #ffc7c7;
+}
+
+.btn:hover {
+  box-shadow: inset 3px 3px 7px #b4b6bd, inset -2px -2px 5px #fff;
 }

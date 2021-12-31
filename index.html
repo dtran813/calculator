@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" />
+    <link rel="android-touch-icon" type="image/png" href="android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-    </style>
     <script defer src="script.js"></script>
     <title>Calculator</title>
   </head>
@@ -15,18 +15,16 @@
     <main>
       <div class="container">
         <div class="display">
-          <div class="pre-calculation">0</div>
+          <div class="pre-calculation"></div>
           <div class="cur-calculation">0</div>
         </div>
         <button class="btn special-operation">%</button>
-        <button class="btn clear-entry">CE</button>
         <button class="btn clear-all">C</button>
+        <button class="btn clear-entry">CE</button>
         <button class="btn delete">&#8592;</button>
-        <button class="btn special-operation">1/x</button>
+        <button class="btn special-operation"><sup>1</sup>/<sub>x</sub></button>
         <button class="btn special-operation">x<sup>2</sup></button>
-        <button class="btn special-operation">
-          &radic;<span style="border-top: 1px solid black">x</span>
-        </button>
+        <button class="btn special-operation">&radic;<span class="top-line">x</span></button>
         <button class="btn operation">÷</button>
         <button class="btn number">7</button>
         <button class="btn number">8</button>
